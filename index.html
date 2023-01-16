@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/832c396281.js" crossorigin="anonymous"></script>
+  <title>Project Meme Generator - Trybe</title>
+</head>
+<body>
+
+  <header id="cabecalho">
+    <h1 id="title">MEME GENERATOR</h2>
+  </header>
+
+  <div id="input">
+    <section>
+      <label for="text-input"><strong>MEME TEXT:</strong></label>
+      <input type="text" id="text-input" maxlength="60"/>
+      <br>
+      <label for="meme-insert" class="button-54">UPLOAD IMAGEM</label>
+      <input accept="image/*" type="file" name="meme-insert" id="meme-insert"/>
+    </section>
+  </div>
+
+  <section>
+    <div id="meme-image-container">         
+      <img id="meme-image">
+      <div id="memes-prontos">
+        <img class ="memes-preprontos" id="meme-1" src="./imgs/meme1.png" alt="">
+        <img class ="memes-preprontos" id="meme-2" src="./imgs/meme2.png" alt="">
+        <img class ="memes-preprontos" id="meme-3" src="./imgs/meme3.png" alt="">
+        <img class ="memes-preprontos" id="meme-4" src="./imgs/meme4.png" alt="">
+      </div>
+      <div id="meme-text"></div>                             
+    </div>
+  </section>
+
+  <div id="buttonsandimages">
+    <div id="buttons">
+      <button class="buttonsperson" id="fire"><i class="fa-solid fa-fire"></i></button>
+      <button class="buttonsperson" id="water"><i class="fa-solid fa-water"></i></button>
+      <button class="buttonsperson" id="earth"><i class="fa-solid fa-earth-americas"></i></button>
+    </div>
+  </div>
+  
+  
+<script src="./script.js"></script>
+</body>
+</html>
